@@ -1,17 +1,19 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import Cabecera from './components/Header.vue';
+import Cuerpo from './components/Body.vue';
+import Info from './components/Info.vue';
+import Habilidades from './components/Habilidades.vue';
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <section id="main">
+    <Cabecera />
+    <Cuerpo  />
+  </section>
+  <aside id="sidebar">
+    <Info />
+    <Habilidades />
+  </aside>
 </template>
 
 <style scoped>
